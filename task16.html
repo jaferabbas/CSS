@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(images/abc.jpg);
+            background-size: cover;
+        }
+        #outer{
+            height: 600px;
+            width: 1250px;
+            background:rgba(0,0,0,.4)
+        }
+        #left{
+            height: 600px;
+            width: 700px;
+            float: left;
+            padding-top: 120px;
+            box-sizing: border-box;
+            color: white;
+            font-size: 22px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        #right{
+            height: 400px;
+            width: 450px;
+            background: rgba(0, 255, 242, 0.4);
+            float: left;
+            margin: 100px 50px;
+            border: 5px solid white;
+            border-radius: 50px;
+            padding: 50px;
+            box-sizing: border-box;
+            transition: all 1s;
+
+        }
+
+        #right:hover{
+            height: 400px;
+            width: 450px;
+            background: rgba(0, 255, 242, 0.4);
+            float: left;
+            margin: 100px 50px;
+            border: 5px solid greenyellow;
+            border-radius: 50px;
+            padding: 50px;
+            box-sizing: border-box;
+            transition: all 1s;
+            /* transform: scale(1.1); */
+            /* transform: scaleX(.3); */
+            /* transform: scaleY(.3); */
+            /* transform: skewX(10deg); */
+            /* transform: skew(5deg,5deg); */
+            /* transform: rotate(360deg); */
+            /* /* transform: translateX(-50px); */
+            transform: translateY(-50px); 
+            /* transform: translate(-10px,-10px); */
+
+        }
+
+        .txt{
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            padding-left: 15px;
+            box-sizing: border-box;
+            
+        }
+        ::placeholder{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div id="left">
+        <p style="color: white;text-align: center;font-size: 58px;font-family: impact;">Welcome to <b style="color:yellowgreen"> Techpiles</b></p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quis aut molestiae tempore consectetur facere excepturi <br><br>
+
+        <input type="button" value="Register" style="border: none; border-radius: 50px; background-color: yellow;height: 45px;width: 200px;">
+    </div>
+    <div id="right">
+        <form>
+            <input type="text" placeholder="Name......." class="txt"><br><br>
+            <input type="Number" placeholder="Number......." class="txt"><br><br>
+            <input type="email" placeholder="Email......." class="txt"><br><br>
+            <select style="border-radius: 20px; border: none;">
+                <option>--Selct course--</option>
+                <option>--.NET MVC--</option>
+                <option>--MEAN--</option>
+                <option>--MERN--</option>
+            </select><br><br>
+           <textarea style="resize: none; outline: none; height:50px; width:340px; border-radius: 10px;"></textarea><br><br>
+           <input type="submit" value="Save" style="border: none; border-radius: 50px; background-color: yellow;height: 45px;width: 200px;">
+        </form>
+    </div>
+</div>
+</body>
+</html>

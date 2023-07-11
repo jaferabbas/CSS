@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            transition: all 2s;
+        }
+        #box{
+            min-height: 200px;
+            width: 400px;
+            background-color: white;
+            margin: 100px auto;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 25px 50px;
+            box-sizing: border-box;
+            transition: all 3s;
+            
+        }
+        .txt{
+            height: 45px;
+            width: 100%;
+            border: 2px aqua solid;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            color: aqua;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+        .btn{
+            height: 45px;
+            width: 100%;
+            background-color: aqua;
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        body:hover{
+            background-color: yellowgreen;
+            transition: all 2s;
+        }
+        .btn:hover{
+            background-color: yellowgreen;
+            transition: all 2s;
+        }
+        #box:hover{
+            background-color: black;
+            color: white;
+            transition: all 3s;
+            box-shadow: 0px 0px 10px 10px black, 0px 0px 15px 15px white ;
+        }
+        ::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <form>
+            User Id <br>
+            <input type="email" required placeholder="User Id....." class="txt"><br>
+            Password<br>
+            <input type="Password" required placeholder="Password...." class="txt"><br>
+            <input type="submit" value="Log In" class="btn">
+        </form>
+
+    </div>
+</body>
+</html>

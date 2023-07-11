@@ -1,0 +1,18 @@
+h1{
+    color:red;
+    background-color: aqua;  
+    border:10px dotted yellow;
+    border-radius: 20px;
+    text-align: center;
+    height:100px;
+    transition:  all 2s;
+}
+h1:hover{
+    background-color: green;
+    color:blue;
+    border:20px double aqua;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    transition: all 3s background;
+}

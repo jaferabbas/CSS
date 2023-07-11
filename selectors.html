@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::selection {
+            background-color: green;
+            color: yellowgreen;
+        }
+
+        p::selection {
+            background-color: aqua;
+            color: yellowgreen;
+        }
+
+        H2 {
+            background-color: RED;
+            color: yellow;
+            padding: 10PX;
+
+        }
+
+        h2::after {
+            content: ' TECHNOLOGY PVT LTD';
+        }
+
+        h2::before {
+            content: 'this text is before text ';
+        }
+
+        h2:hover:after {
+            content: '';
+            width: 200px;
+            height: 10px;
+            background-color: blue;
+            display: block;
+        }
+
+        h2:hover:before {
+            content: '';
+            width: 200px;
+            height: 10px;
+            background-color: pink;
+            display: block;
+        }
+
+        #p1::first-letter{
+            background-color: green;
+            color: white;
+            padding: 5px;
+            font-size: 40px;
+        }
+
+        #p2::first-line{
+            background-color: green;
+            color: white;
+            padding: 5px;
+            font-size: 40px;
+        }
+
+        /* -------------------------Nth child selctor--------------------------------- */
+        tr:first-child{
+            background-color: black;
+            color: red;
+        }
+        tr:last-child{
+            background-color: pink;
+            color: green;
+        }
+        tr:nth-child(3){
+            background-color: aqua;
+            color: green;
+        }
+
+        /* -----to select odd even  use below code;----
+                    tr:nth-child(odd) 
+                    tr:nth-child(even) */
+                
+    </style>
+</head>
+
+<body>
+    <!-- ::selection
+    ::placeholder-->
+    <hr>
+    <h1>PSEUDO :- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, laboriosam!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, esse dolorem expedita deserunt, perspiciatis vero
+        natus libero, ut nostrum nulla iusto consequuntur! Est nesciunt laudantium minus nobis itaque molestiae
+        corrupti?</p>
+    <hr>
+    <hr>
+    <!-- ::afetr
+    ::before -->
+    <h2>TECHPILE</h2>
+<hr>
+<hr>
+    <!-- ::first-letter-->
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor hic incidunt aut ad? Libero labore odit exercitationem architecto earum, iste omnis! Voluptas nihil ullam asperiores! Vitae iste facilis omnis esse.</p>
+
+    <hr>
+    <hr>
+    <!-- ::first-line  -->
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis iure quidem illo optio sunt, voluptatem consequatur vero laborum, in cupiditate, minus perferendis unde quaerat veniam possimus ex illum ab?</p>
+
+    <hr>
+    <hr>
+    <!-- nth child selector -->
+    <table border="1" style="padding: 5px;">
+        <tr.>
+            <th>Name</th>
+            <th>City</th>
+            <th>College</th>
+        </tr>
+        <tr>
+            <td>ansuhu</td>
+            <td>LU</td>
+            <td>lUCKNOE</td>
+        </tr>
+        <tr>
+            <td>RAhuL</td>
+            <td>LU</td>
+            <td>INDORE</td>
+        </tr>
+        <tr>
+            <td>RAhuL</td>
+            <td>LU</td>
+            <td>CHINA</td>
+        </tr>
+        <tr>
+            <td>RAhuL</td>
+            <td>LU</td>
+            <td>USA</td>
+        </tr>
+    </table>
+
+   
+</body>
+
+</html>

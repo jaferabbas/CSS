@@ -1,0 +1,551 @@
+<html>
+<head>
+<style>
+:root
+{
+--mycolor:#FF8800;
+}
+#outer
+{
+min-height:1000px;
+width:1200px;
+border:1px solid black;
+margin:0px auto;
+}
+#header
+{
+height:50px;
+width:1200px;
+}
+#logo
+{
+height:50px;
+width:300px;
+float:left;
+line-height:50px;
+text-align:center;
+font-size:30px;
+}
+#menu
+{
+height:50px;
+width:900px;
+float:left;
+background:var(--mycolor);
+}
+nav ul
+{
+list-style-type:none;
+}
+nav ul li
+{
+height:45px;
+width:95px;
+text-align:center;
+line-height:45px;
+font-weight:bold;
+color:white;
+float:left;
+margin-left:8px;
+transform:translateY(-14px);
+border-radius:4px;
+}
+nav ul li:hover
+{
+background:white;
+color:var(--mycolor);
+transition:all ease 1s;
+box-shadow:0px 0px 0px 3px rgba(255,255,255,.7),0px 0px 0px 6px rgba(255,255,255,.3);
+}
+#slider
+{
+width:1200px;
+height:550px;
+background:url('images/abcd.jpg');
+background-size:cover;
+background-attachment:fixed;
+animation-name:slider;
+animation-duration:6s;
+animation-iteration-count:infinite;
+}
+#slider1
+{
+height:550px;
+width:1200px;
+background:rgba(0,0,0,.5);
+}
+#slider:hover
+{
+animation-play-state:paused;
+}
+@keyframes slider
+{
+0%{
+background:url('images/abcd.jpg');
+background-attachment:fixed;
+background-size:cover;
+}
+50%{
+background:url('images/a.jpg');
+background-attachment:fixed;
+background-size:cover;
+}
+100%{
+background:url('images/abcd.jpg');
+background-size:cover;
+background-attachment:fixed;
+}
+}
+#a
+{
+height:550px;
+width:700px;
+float:left;
+padding-top:190px;
+box-sizing:border-box;
+}
+#b
+{
+height:450px;
+width:400px;
+float:left;
+background:rgba(255,255,255,.8);
+margin:50px;
+border-radius:10px;
+padding:50px;
+box-sizing:border-box;
+box-shadow:0px 0px 0px 5px rgba(255,255,255,.5),0px 0px 0px 10px rgba(255,255,255,.2);
+animation:abc 2s infinite alternate;
+}
+@keyframes abc
+{
+0%{}
+100%{
+box-shadow:0px 0px 0px 15px rgba(255,255,255,.2),0px 0px 0px 20px rgba(255,255,255,.1);
+}
+}
+.txt
+{
+height:45px;
+width:100%;
+margin-bottom:7px;
+border-radius:5px;
+border:1px solid var(--mycolor);
+padding-left:15px;
+box-sizing:border-box;
+color:var(--mycolor);
+}
+.txta
+{
+height:80px;
+width:100%;
+margin-bottom:7px;
+border:1px solid var(--mycolor);
+border-radius:5px;
+resize:none;
+}
+::placeholder
+{
+color:var(--mycolor);
+}
+.btn
+{
+height:45px;
+width:100%;
+margin-bottom:7px;
+border-radius:5px;
+border:none;
+background:var(--mycolor);
+color:white;
+}
+#services
+{
+min-height:300px;
+width:1200px;
+padding:0px 150px;
+box-sizing:border-box;
+background:rgba(0,0,0,.8);
+}
+.s
+{
+width:250px;
+min-height:250px;
+background:white;
+border-radius:5px;
+animation:abc 1s infinite alternate;
+float:left;
+margin:25px;
+padding:15px;
+box-sizing:border-box;
+text-align:justify;
+}
+#aboutus
+{
+min-height:400px;
+width:1200px;
+padding:25px 150px;
+box-sizing:border-box;
+text-align:justify;
+column-count:2;
+column-gap:40px;
+column-rule:20px groove grey;
+}
+#gallery
+{
+min-height:600px;
+width:1200px;
+background:var(--mycolor);
+padding-top:30px;
+box-sizing:border-box;
+}
+.row
+{
+height:300px;
+width:1200px;
+}
+.col
+{
+height:250px;
+width:350px;
+float:left;
+background:white;
+margin:25px;
+animation:abc 3s infinite alternate;
+border-radius:5px;
+border:5px solid white;
+box-sizing:border-box;
+padding:5px;
+}
+.col1
+{
+height:230px;
+width:330px;
+background:rgba(0,0,0,.5);
+border-radius:5px;
+padding-top:100px;
+box-sizing:border-box;
+text-align:center;
+opacity:0;
+}
+.col1:hover
+{
+opacity:1;
+transform:perspective(400px) rotateY(360deg);
+transition:2s;
+}
+.img-title
+{
+color:white;
+width:130px;
+border-top:3px solid white;
+border-bottom:3px solid white;
+font-size:30px;
+margin:0px auto;
+}
+#contact
+{
+min-height:600px;
+width:1200px;
+}
+#con
+{
+min-height:500px;
+width:1200px;
+}
+#left
+{
+width:500px;
+min-height:500px;
+float:left;
+padding:80px 100px;
+box-sizing:border-box;
+}
+#right
+{
+width:700px;
+min-height:500px;
+background:navy;
+float:left;
+}
+#bfooter{
+    height: 350px;
+    width: auto;
+    background-color: black;
+    /* margin: 5px auto; */
+}
+
+.footer-div{
+    height: 300px;
+    width: 350px;
+    margin: 20px 20px;
+    border: 1px solid black;
+    /* background-color: white; */
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+
+}
+.a{
+    height: 80px;
+    width:px;
+    margin-bottom: 10px;
+}
+
+#offer{
+    height: 250px;
+    /* background-color: #FF8800; */
+    margin-bottom: 50px;
+}
+
+.trending-offers{
+    height: 130px;
+    width: 180px;
+    border: 2px solid var(--mycolor);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #00ff00;
+    float:left;
+}
+#login{
+    height: 550px;
+    width: auto;
+    background-color: rgb(233, 222, 222);
+    margin-bottom: 40px;
+
+}
+
+.login1{
+    height:400px;
+    width: 550px;
+    
+    margin-bottom: 40px;
+    float: left;
+    margin:0px 20px;
+    margin-left: 30px;
+}
+
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="header">
+<div id="logo">
+Techpile <b style="color:var(--mycolor);">Coders</b>
+</div>
+<div id="menu">
+<nav>
+<ul>
+<a href="#slider"><li>Home</li></a>
+<a href="#aboutus"><li>About Us</li></a>
+<a href="#contact"><li>Contact Us</li></a>
+<a href="#"><li>Services</li></a>
+<a href="#"><li>Products</li></a>
+<a href="#gallery"><li>Gallery</li></a>
+<a href="#login"><li>Register</li></a>
+<a href="#"><li>Login</li></a>
+</ul>
+</nav>
+
+</div>
+</div>
+<div id="slider">
+<div id="slider1">
+<div id="a">
+<div style="text-align:center;font-size:50px;color:white;text-shadow:2px 2px 1px black;">
+Welcome to <b style="color:var(--mycolor);">Techpile Coders</b></div>
+<a href="#" style="text-decoration:none;">
+<div style="height:40px;width:100px;border-radius:5px;text-align:center;line-height:40px;font-size:20px;background:var(--mycolor);color:white;margin:10px auto;">SIGN IN</div>
+</a>
+</div>
+<div id="b">
+<form>
+<input class="txt" type="text" placeholder="Name.."/><br/>
+<input class="txt" type="number" placeholder="Mobile.."/><br/>
+<input class="txt" type="Email" placeholder="Email.."/><br/>
+<input class="txt" list="dlist" type="Text" placeholder="Course..."/>
+<datalist id="dlist">
+<option>.NET MVC</option>
+<option>MEAN STACK</option>
+<option>MERN STACK</option>
+<option>DSA Using JAVA</option>
+<option>HTML</option>
+<option>PYTHON</option>
+<option>CSS</option>
+</datalist>
+<br/>
+<select class="txt">
+<option>--Select Branch--</option>
+<option>CS</option>
+<option>IT</option>
+<option>EC</option>
+<option>ME</option>
+</select><br/>
+<select class="txt">
+<option>--Select Year--</option>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+</select><br/>
+<input class="btn" type="Submit" value="SAVE"/>
+</form>
+</div>
+</div>
+</div>
+<div id="services">
+<div class="s">
+<img src="images/s.png" height="50px"/><br/>
+<b>Service 1</b><br/>
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+</div>
+<div class="s">
+<img src="images/s.png" height="50px"/><br/>
+<b>Service 1</b><br/>
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+</div>
+<div class="s">
+<img src="images/s.png" height="50px"/><br/>
+<b>Service 1</b><br/>
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+</div>
+</div>
+<div id="aboutus">
+<h1 style="column-span:all;text-align:center;">ABOUT <b style="color:var(--mycolor);">US</b></h1>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+</div>
+<div id="gallery">
+<h1 style="column-span:all;text-align:center;">Image <b style="color:white;">Gallery</b></h1>
+<div class="row">
+<div class="col" style="background:url('images/abc.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+<div class="col" style="background:url('images/abcd.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+<div class="col" style="background:url('images/a.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col" style="background:url('images/abc.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+<div class="col" style="background:url('images/abc.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+<div class="col" style="background:url('images/abc.jpg');background-size:cover;">
+<div class="col1">
+<div class="img-title">TITLE 1</div>
+</div>
+</div>
+</div>
+</div>
+<div id="contact">
+<h1 style="column-span:all;text-align:center;">Contact<b style="color:var(--mycolor);">Us</b></h1>
+<div id="con">
+<div id="left">
+<form>
+<input type="text" class="txt" placeholder="Name.."/></br/>
+<input type="number"  class="txt" placeholder="Mobile.."/></br/>
+<input type="email"  class="txt" placeholder="Email.."/></br/>
+<textarea class="txta"></textarea></br/>
+<input type="submit" class="btn" value="Save"/></br/>
+
+</form>
+</div>
+<div id="right">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.2204882293026!2d80.9765652!3d26.8964967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957bc4aea2b11%3A0x1d230bb57064ca4!2sCodersLucknow!5e0!3m2!1sen!2sin!4v1677479102926!5m2!1sen!2sin" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+ <div id="offer">
+    <h1 style="column-span:all;text-align:center;">Trending<b style="color:var(--mycolor);">Offers</b></h1>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer1.jpg"></div>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer2.avif"></div>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer1.jpg"></div>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer3.avif"></div>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer1.jpg"></div>
+    <div class="trending-offers"><img style="height: 130px; width: 180px;" src="./images/offer1.jpg"></div>
+</div>
+<div id="login">
+    <h1 style="column-span:all;text-align:center;">Register<b style="color:var(--mycolor);">Here</b></h1>
+    <div class="login1">
+
+        <form>
+            <input class="txt" type="text" placeholder="Name...."> <br>
+            <input class="txt" type="email" placeholder="Email...."> <br>
+            <input class="txt" type="number" placeholder="Mobile No...."> <br>
+            <input class="txt" type="text" placeholder="Apply For...."> <br>
+            <input class="txt" type="text" placeholder="Training Mode...."> <br>
+            <input class="txt" type="text" placeholder="College Name...."> <br>
+            <input class="txt" type="text" placeholder="Training Seesion...."> <br>
+            <input class="txt" type="text" placeholder="Select Course...."> <br>
+            <button class="btn">Register Now</button>
+        </form>
+    </div>
+    <div class="login1">
+        <p style="font-size: 20px;  margin-left: 20px;">
+            <span style="font-size: 30px; font-family: impact; color: black;"> Instruction</span> <br> <br>
+            1.  Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        2. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        3. Lorem ipsum dolor sit, amet consectetur. <br>
+        4. Lorem ipsum dolor sit,  adipisicing.  <br>
+        5. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        6. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        7. Lorem ipsum dolor sit, amet  adipisicing. <br>
+        8. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        9. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        10. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        11. Lorem ipsum dolor sit,  adipisicing. <br>
+        12. Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+       
+    </div>
+</div>
+<!-- <div id="ufooter"></div> -->
+<div id="bfooter">
+    <div class="footer-div">
+        <div class="a"><img style="height: 80px; width: 310px;" src="./images/3.jpg" alt=""></div>
+        <div class="a"><img style="height: 80px; width: 310px;" src="./images/a.jpg" alt=""></div>
+        <div class="a"><img style="height: 80px; width: 310px;" src="./images/3.jpg" alt=""></div>
+    </div>
+    <div class="footer-div">
+             
+        <h2>Contact Address</h2>
+        <p>Plot No-43,Behind H.P Petrol Pump, <br> Tehdhi Pulia Ring Rd, Secter 5, <br> Vikas Nagar, Lucknow, <br> Uttar Pradesh 226003 <br> <br> +91-7007237006 <br>+91-8258496321 <br> techpilelko@gmail.com</p>
+
+    </div>
+    <div class="footer-div">
+
+        <h2>TCHPILE</h2>
+       <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, libero. Deserunt aut voluptatibus labore, ipsa cupiditate, quae quaerat impedit officiis quasi expedita distinctio fugit reprehenderit. Neque laudantium debitis ad vero.</P> 
+    
+    <h3>Stay Connected</h3>
+
+    </div>
+</div>
+</div>
+</body>
+</html>

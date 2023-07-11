@@ -1,0 +1,99 @@
+<!-- Syntax animation
+----------------
+@keyframes animationname{
+    from{
+        property:value;
+        property:value;
+        property:value;
+    } 
+    
+    to{
+        property:value;
+        property:value;
+        property:value;
+    } 
+    }
+} 
+
+example:
+------------------
+@keyframes myAnimation{
+    from{
+        background:red;
+        color:yellow;
+    }
+    to{
+        background:yellow;
+        color:red;
+    }
+}
+
+==================================
+
+animation-name:ainmationname
+animation-duration:5s;
+animation-direction: normal | reverse | alternate | alternate-reverse
+animation-delay: 2s;
+animation-play-state: running | paused
+animation-iteration-count: number | infinite
+animation-timing-function: linear | ease | ease-in|ease-out|ease-in-out|steps
+animation-fill-mode: forwards | backword | both | none -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(images/nature.jpg);
+            background-size: cover;
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            background-color: white;
+            border: 10px solid red;
+            border-radius: 10px;
+            line-height: 400px;
+            font-size: 50px;
+            margin: 100px auto;
+            transition: all 5s;
+            animation-name: abc;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+            /* animation-delay: 3s; */
+        }
+        /* div:hover{
+            box-shadow: 0px 0px 0px 30px rgba(224,40,40,.7),0px 0px 0px 60px rgba(224,40,40,.4),0px 0px 0px 90px rgba(224,40,40,.2);
+            transition: all 2s;
+            transform: rotate(360deg);
+        } */
+        @keyframes abc{
+            from{
+           background: red;
+           color: yellow;
+           /* transform: rotate(0deg); */
+
+            }
+            to{
+           background-color: yellow;
+           color: red;
+           /* transform: rotate(360deg); */
+           box-shadow: 0px 0px 0px 30px rgba(224,40,40,.7),0px 0px 0px 60px rgba(224,40,40,.4),0px 0px 0px 90px rgba(224,40,40,.2);
+
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div>WELCOME</div>
+</body>
+</html>

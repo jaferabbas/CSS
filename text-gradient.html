@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            width: 1200px;
+            margin: 0px 50px;
+            background-color: aqua;
+            font-size: 200px;
+            font-family: Impact;
+            line-height: 400px;
+            background: repeating-conic-gradient(blue 10deg, green 20deg, black 30deg);
+            text-align: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation-name: abcd;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes abcd {
+            0% {
+                background: repeating-conic-gradient(pink 10deg, yellow 20deg, red 30deg);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            25% {
+                background: repeating-conic-gradient(aqua 10deg, yellowgreen 20deg, grey 30deg);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            50% {
+                background: repeating-conic-gradient(purple 10deg, green 20deg, yellow 30deg);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            75% {
+                background: repeating-conic-gradient(violet 10deg, yellowgreen 20deg, lightpink 30deg);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            100% {
+                background: repeating-conic-gradient(blue 10deg, green 20deg, black 30deg);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        JAFAR ABBAS
+    </div>
+</body>
+
+</html>

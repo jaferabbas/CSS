@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+            width: 700px;
+            /* border: 2px solid yellow; */
+        }
+
+        .inner{
+            height: 250px;
+            width: 700px;
+            /* border: 1px solid red; */
+        }
+        .box{
+            height: 220px;
+            width: 203px;
+            margin: 15px;
+            float: left;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+
+        #a:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        #b:hover{
+            transform: skew(5deg, 5deg);
+            transition: all 1s;
+        } 
+        
+        #c:hover{
+            transform: rotate(360deg);
+            transition: all 1s;
+        } 
+        
+        #d:hover{
+            transform: translateX(-50px);
+            transition: all 1s;
+        } 
+        
+        #e:hover{
+            transform: scaleX(0.3);
+            transition: all 1s;
+        } 
+        
+        #f:hover{
+            transform: translate(-10px, -10px);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+        <div class="inner">
+            <div class="box" id="a"><img src="images/3.jpg" style="height: 220px; width: 203px;"> </div>
+            <div class="box" id="b"> <img src="images/abc.jpg" style="height: 220px; width: 203px;"></div>
+            <div class="box" id="c"> <img src="images/3.jpg" style="height: 220px; width: 203px;"></div>
+        </div>
+        <div class="inner">
+            <div class="box" id="d"> <img src="images/abc.jpg" style="height: 220px; width: 203px;"></div>
+            <div class="box"id="e" > <img src="images/3.jpg" style="height: 220px; width: 203px;"></div>
+            <div class="box" id="f"> <img src="images/abc.jpg" style="height: 220px; width: 203px;"></div>
+        </div>
+        
+    </div>
+</center>
+</body>
+</html>

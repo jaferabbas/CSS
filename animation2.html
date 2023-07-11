@@ -1,0 +1,87 @@
+    <!-- =============================animation-timing-function ==============================-->
+    <!-- linear  same speed start to end
+     ease start slow then fast and end slow
+     ease-in start slow
+     ease-out end slow
+     ease-in-out start and end slow  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            border: 5px solid yellow;
+            margin-top:20px;
+        }
+      .a1{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+      }
+      .a1:hover{
+        animation-play-state: paused;
+      }
+      .a2{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+        animation-direction: reverse;
+      }
+      .a3{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in;
+        animation-direction: alternate-reverse
+        ;
+      }
+      .a4{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-out;
+      }
+      .a5{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
+      }
+      .a6{
+        animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-timing-function:steps(5);
+      }
+        @keyframes abc{
+            from{
+width: 50px;
+
+            }
+            to{
+width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <div class="a3"></div>
+    <div class="a4"></div>
+    <div class="a5"></div>
+    <div class="a6"></div>
+</body>
+</html>

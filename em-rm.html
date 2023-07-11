@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            background-color: red;
+            font-size: 50px;
+        }
+
+        #inner {
+            background-color: yellow;
+            font-size: 2em;
+        }
+
+        /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        #outer1 {
+            background-color: red;
+            font-size: 20px;
+        }
+
+        #inner1 {
+            background-color: yellow;
+            font-size: 2rem;
+        }
+
+        /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+        #outer2 {
+            background: url(./images/3.jpg);
+            background-size: 100% 100%;
+            height: calc(100vh/2);
+            width: calc(100vw/2);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">TECHPILE TECHNOLOGY || OUTER
+        <div id="inner">TECHPILE TECHNOLOGY || INNER</div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div id="outer1">TECHPILE TECHNOLOGY || OUTER
+        <div id="inner1">TECHPILE TECHNOLOGY || INNER</div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div id="outer2"> </div>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+</body>
+
+</html>
+<!-- font size by default size is 16 px -->
+
+
+
+<!-- em current parrent se size uthata hy  
+    ----------------
+    50px  =====  1em
+    100px =====  2em
+    150px =====  3em
+    ----------------  -->
+
+<!-- rem take in multipilication of i.e html value of font size jo appne first time define kiya hy
+   ----------------------
+   20*1 = 20px =====  1rem
+   20*2 = 40px =====  2rem
+   20*3 = 60px =====  3rem
+   ---------------------- -->

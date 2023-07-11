@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:url(images/nature.jpg);
+            background-size: cover;
+        }
+        nav{
+            border: 1px solid white;
+            background: rgba(0, 0, 0, .6);
+            border-radius: 10px;
+            height: 45px;
+            width: 900px;
+            margin: 0px auto;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            margin-left: 15px;
+            transform: translateY(-13px);
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li ul li{
+            background: rgba(0,0,0,.5);
+            transform: translateY(3px);
+            transform: translateX(-55px);
+        }
+        nav ul ul{
+            /* display: none; */
+            opacity: 0;
+            transition: all 1s;
+        }
+        nav ul li:hover ul{
+            /* display: block; */
+            opacity: 1;
+            transition: all 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About Us</li></a>
+            <a href=""><li>Contact Us</li></a>
+            <a href=""><li>Gallery
+                <ul>
+                    <li>Image</li>
+                    <li>Video</li>
+                </ul>
+            </li></a>
+            <a href=""><li>Sign Up</li></a>
+            <a href=""><li>Sign In</li></a>
+           
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='text']
+        {
+            height: 40px;
+            width: 300px;
+            background-color: greenyellow;
+            border: 10px saddlebrown groove;
+        }
+
+        input[value='save']
+        {
+            height: 90px;
+            width: 100px;
+            background-color: rgb(85, 47, 255);
+            border: 10px rgb(139, 19, 55) groove;
+        }
+        input[class]
+        {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- ATTRIBUTE SELECTORS -->
+    <form>
+        <input type="text" placeholder="NAME....................." /><br> <br>
+        <input type="email" placeholder="EMAIL....................." /><br> <br>
+        <input type="password" /> <br> <br>
+        <input type="submit" value="save"/><br> <br>
+
+        <input class="a" id="a" type="text" /><br> <br>
+        <input id="b" type="text" /><br> <br>
+        <input class="a" type="text" /><br> <br>
+        <input class="b" type="text" />
+    </form>
+</body>
+</html>

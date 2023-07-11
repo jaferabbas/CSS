@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+	#a{
+	background:url(./images/abcd.jpg);
+	height:600px;
+	width:1200px;
+	background-size:cover;
+	margin:0px auto;
+	transition:all ease 2s;
+
+}
+
+#b{
+	height:550px;
+	width:1150px;
+	background:rgba(255, 255, 255 ,0.4);
+	font-size:90px;
+	text-align:center;
+	line-height:500px;
+	color:yellow;
+
+}
+
+@media (min-width:400px) and (max-width:700px){
+	#a{
+		background:url(./images/a.jpg);
+		height:400px;
+		width:400px;
+		background-size:cover;
+	}
+	
+	#b{
+		height:350px;
+		width:350px;
+		background:rgba(0,0,0,.4);
+		font-size:90px;
+		text-align:center;
+		line-height:300px;
+		color:orange;
+	  }
+}
+
+
+</style>
+</head>
+<body>
+
+	<div id="a">
+	   <div id="b"> PRINCE</div>
+	</div>
+</body>
+</html>
